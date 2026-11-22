@@ -1,0 +1,39 @@
+"SBLP":
+  url: https://sol.sbc.org.br/index.php/sblp
+  color: "#2a6f97"
+"SBMF":
+  url: https://link.springer.com/conference/sbmf
+  color: "#4a7c59"
+"POPL":
+  url: https://dl.acm.org/journal/pacmpl
+  color: "#b5442c"
+"TOPLAS":
+  url: https://dl.acm.org/journal/toplas
+  color: "#b5442c"
+"ITP":
+  url: https://itp-conference.github.io/
+  color: "#7b4fa0"
+"CGO":
+  url: https://dl.acm.org/conference/cgo
+  color: "#b5442c"
+"Haskell":
+  url: https://www.haskell.org/haskell-symposium/
+  color: "#5e5086"
+"SAC":
+  url: https://dl.acm.org/conference/sac
+  color: "#b5442c"
+"COLA":
+  url: https://www.sciencedirect.com/journal/journal-of-computer-languages
+  color: "#e9711c"
+"SCP":
+  url: https://www.sciencedirect.com/journal/science-of-computer-programming
+  color: "#e9711c"
+"JBCS":
+  url: https://journal-bcs.springeropen.com/
+  color: "#3d6b8e"
+"CLEI":
+  url: https://www.clei.org/cleiej/index.php/cleiej
+  color: "#6c757d"
+"RITA":
+  url: https://seer.ufrgs.br/rita
+  color: "#6c757d"
