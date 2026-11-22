@@ -3,11 +3,15 @@ layout: default
 ---
 {%- comment -%} Local override: bilingual headings (en / pt-BR). {%- endcomment -%}
 {%- if page.lang contains 'pt' -%}
-  {%- assign t_news = 'notícias' -%}{%- assign u_news = '/pt/noticias/' -%}
-  {%- assign t_pubs = 'publicações selecionadas' -%}{%- assign u_pubs = '/pt/publicacoes/' -%}
+  {%- assign t_news = 'notícias' -%}
+  {%- assign u_news = '/pt/noticias/' -%}
+  {%- assign t_pubs = 'publicações selecionadas' -%}
+  {%- assign u_pubs = '/pt/publicacoes/' -%}
 {%- else -%}
-  {%- assign t_news = 'news' -%}{%- assign u_news = '/news/' -%}
-  {%- assign t_pubs = 'selected publications' -%}{%- assign u_pubs = '/publications/' -%}
+  {%- assign t_news = 'news' -%}
+  {%- assign u_news = '/news/' -%}
+  {%- assign t_pubs = 'selected publications' -%}
+  {%- assign u_pubs = '/publications/' -%}
 {%- endif -%}
 <div class="post">
   <header class="post-header">

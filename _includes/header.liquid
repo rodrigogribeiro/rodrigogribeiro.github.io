@@ -136,7 +136,12 @@
           {% endfor %}
           <!-- Language switch -->
           <li class="nav-item">
-            <a class="nav-link" href="{{ other_url | relative_url }}" title="{{ other_title }}" hreflang="{% if cur_lang == 'pt' %}en{% else %}pt-BR{% endif %}">
+            <a
+              class="nav-link"
+              href="{{ other_url | relative_url }}"
+              title="{{ other_title }}"
+              hreflang="{% if cur_lang == 'pt' %}en{% else %}pt-BR{% endif %}"
+            >
               <i class="fa-solid fa-language"></i> {{ other_label }}
             </a>
           </li>
