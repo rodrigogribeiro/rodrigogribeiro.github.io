@@ -1,0 +1,5 @@
+{%- comment -%} Local override: translated placeholder (en / pt-BR). {%- endcomment -%}
+{% if site.bib_search %}
+  <script src="{{ '/assets/js/bibsearch.js' | relative_url | bust_file_cache }}" type="module"></script>
+  <input type="text" id="bibsearch" spellcheck="false" autocomplete="off" class="search bibsearch-form-input" placeholder="{% if page.lang contains 'pt' %}Digite para filtrar{% else %}Type to filter{% endif %}">
+{% endif %}

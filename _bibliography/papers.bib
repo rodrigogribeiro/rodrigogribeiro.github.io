@@ -1,0 +1,734 @@
+---
+---
+
+@inproceedings{ribeiro2026strongnorm,
+  title       = {{Strong Normalization for Well-Typed Parsing Expression Grammars}},
+  author      = {do Nascimento, Guilherme Augusto Anício Drummond and Cardoso, Elton Máximo and Feitosa, Samuel da Silva and Ribeiro, Rodrigo},
+  booktitle   = {Proceedings of the XXX Brazilian Symposium on Programming Languages (SBLP 2026)},
+  year        = {2026},
+  publisher   = {Sociedade Brasileira de Computação},
+  abstract    = {Parsing Expression Grammars (PEGs) are a deterministic formalism for describing syntax that has gained wide adoption in practice. We show that well-typed PEGs always terminate, using a logical-relations argument inspired by the strong normalization proof for the simply typed lambda-calculus. The proof is mechanized in the Agda proof assistant.},
+  code        = {https://github.com/lives-group/peg-strong-normalization},
+  bibtex_show = {true},
+  abbr        = {SBLP},
+  additional_info = { (to appear)}
+}
+
+@inproceedings{ribeiro2026microkanren,
+  title       = {{A Mechanized Formalization of MicroKanren in Agda}},
+  author      = {Henke, Eduardo and Ribeiro, Rodrigo},
+  booktitle   = {Proceedings of the XXX Brazilian Symposium on Programming Languages (SBLP 2026)},
+  year        = {2026},
+  publisher   = {Sociedade Brasileira de Computação},
+  abstract    = {We present a machine-checked formalization of microKanren in the Agda proof assistant. Building on McBride's accumulating most-general unifier, we develop a coinductive stream model for non-deterministic search with machine-verified soundness, completeness, and maximality for the unification goal.},
+  code        = {https://github.com/lives-group/agda-kanren},
+  bibtex_show = {true},
+  abbr        = {SBLP},
+  additional_info = { (to appear)}
+}
+
+@inproceedings{ribeiro2026ebpf,
+  title       = {{A Mechanized Semantics for eBPF and its Applications in Program Verification}},
+  author      = {Emiliano, Marcos Geraldo Braga and Ribeiro, Rodrigo},
+  booktitle   = {Proceedings of the XXX Brazilian Symposium on Programming Languages (SBLP 2026)},
+  year        = {2026},
+  publisher   = {Sociedade Brasileira de Computação},
+  abstract    = {This paper presents a mechanized formalization of eBPF in Lean 4, comprising a small-step operational semantics over 64-bit machine words and flat byte-addressed memory, a separation logic over register files and partial heaps, and a sound frame rule with a semantic soundness theorem connecting the derivation system to the operational model.},
+  code        = {https://github.com/lives-group/lean-ebpf},
+  bibtex_show = {true},
+  abbr        = {SBLP},
+  additional_info = { (to appear)}
+}
+
+@inproceedings{ribeiro2026greibach,
+  title       = {{A Machine-Checked Formalization of the Greibach Normal Form Conversion for Context-Free Grammars}},
+  author      = {Ribeiro, Rodrigo},
+  booktitle   = {Formal Methods: Foundations and Applications -- 29th Brazilian Symposium on Formal Methods (SBMF 2026)},
+  year        = {2026},
+  publisher   = {Springer},
+  abstract    = {The Greibach Normal Form (GNF) is a canonical form for context-free grammars in which every production begins with a terminal symbol. We present a formalization of the GNF conversion in which each stage carries a constructive proof that it preserves the language of the grammar it transforms.},
+  code        = {https://github.com/lives-group/greibach},
+  bibtex_show = {true},
+  abbr        = {SBMF},
+  additional_info = { (to appear)}
+}
+
+@inproceedings{ribeiro2026pdapumping,
+  title       = {{A Machine-Checked Formalization of the Pumping Lemma for Context-Free Languages via Pushdown Automata}},
+  author      = {Ribeiro, Rodrigo},
+  booktitle   = {Formal Methods: Foundations and Applications -- 29th Brazilian Symposium on Formal Methods (SBMF 2026)},
+  year        = {2026},
+  publisher   = {Springer},
+  abstract    = {We present a machine-checked formalization, in the dependently typed language Agda, of the pumping lemma for context-free languages, proved through pushdown automata. The theorem is stated about an arbitrary pushdown automaton and its empty-stack language.},
+  code        = {https://github.com/lives-group/pda-pumping},
+  bibtex_show = {true},
+  abbr        = {SBMF},
+  additional_info = { (to appear)}
+}
+
+@inproceedings{ribeiro2026resourcehoare,
+  title       = {{Mechanizing a Resource-Aware Hoare Logic with Asymptotic Cost Assertions in Lean}},
+  author      = {Saldanha, Gabriel Araújo and Ribeiro, Rodrigo},
+  booktitle   = {Formal Methods: Foundations and Applications -- 29th Brazilian Symposium on Formal Methods (SBMF 2026)},
+  year        = {2026},
+  publisher   = {Springer},
+  abstract    = {Resource-aware Hoare logics internalize cost reasoning through cost-annotated triples, but their metatheory typically rests only on pen-and-paper proofs. We present a mechanization in Lean of one such logic, covering its cost-instrumented semantics, its cost logic and its verification condition generator, together with a relative-completeness result absent from the source.},
+  code        = {https://github.com/lives-group/resources-logic},
+  bibtex_show = {true},
+  abbr        = {SBMF},
+  additional_info = { (to appear)}
+}
+
+@inproceedings{ribeiro2025honeypotion,
+  title       = {{Honey Potion: An eBPF Backend for Elixir}},
+  author      = {Augusto, Kael Soares and Pacheco, Vinícius and Vieira, Marcos A. and Ribeiro, Rodrigo Geraldo and Pereira, Fernando Magno Quintão},
+  booktitle   = {Proceedings of the 23rd ACM/IEEE International Symposium on Code Generation and Optimization (CGO '25)},
+  year        = {2025},
+  publisher   = {ACM},
+  doi         = {10.1145/3696443.3708923},
+  abstract    = {This paper describes Honey Potion, a compiler that compiles Elixir to eBPF binaries. Translation must not only preserve semantics but also satisfy the eBPF verifier, which requires proofs of in-bounds memory accesses and termination; the translator relies on ensured termination to implement constant propagation, type specialization and partial evaluation.},
+  code        = {https://github.com/lac-dcc/honey-potion},
+  selected    = {true},
+  bibtex_show = {true},
+  abbr        = {CGO}
+}
+
+@inproceedings{ribeiro2025pest,
+  title       = {{Pest Control: A formal model of the Pest parser generator}},
+  author      = {Daher, Guilherme and Cardoso, Elton and Reis, Leonardo and Ribeiro, Rodrigo},
+  booktitle   = {Proceedings of the XXIX Brazilian Symposium on Programming Languages (SBLP 2025)},
+  year        = {2025},
+  publisher   = {Sociedade Brasileira de Computação},
+  doi         = {10.5753/sblp.2025.10399},
+  abstract    = {Pest is the most used PEG-based parser generator for Rust, and its grammars support new operators for repetition and handling an implicit stack during parsing. We propose a formalization of these constructs and extend a type inference algorithm which guarantees that all well-typed Pest-style grammars do not loop on inputs.},
+  bibtex_show = {true},
+  abbr        = {SBLP}
+}
+
+@inproceedings{ribeiro2024redex2coq,
+  title       = {{Redex2Coq: Towards a Theory of Decidability of Redex's Reduction Semantics}},
+  author      = {Soldevila, Mallku and Ribeiro, Rodrigo and Ziliani, Beta},
+  booktitle   = {15th International Conference on Interactive Theorem Proving (ITP 2024)},
+  series      = {Leibniz International Proceedings in Informatics (LIPIcs)},
+  editor      = {Bertot, Yves and Kutsia, Temur and Norrish, Michael},
+  pages       = {34:1--34:18},
+  year        = {2024},
+  publisher   = {Schloss Dagstuhl -- Leibniz-Zentrum für Informatik},
+  doi         = {10.4230/LIPIcs.ITP.2024.34},
+  abstract    = {We propose the first step in the development of a tool to automate the translation of Redex models into a semantically equivalent model in Coq, and to provide tactics to help in the certification of fundamental properties of such models. We code in Coq a primitive recursive definition of Redex's matching algorithm and prove its correctness with respect to the original specification.},
+  code        = {https://github.com/Mallku2/redex2coq},
+  selected    = {true},
+  bibtex_show = {true},
+  abbr        = {ITP}
+}
+
+@inproceedings{ribeiro2024haskellgen,
+  title       = {{Differential Testing using Random Well-Typed Haskell Programs}},
+  author      = {Feitosa, Samuel da Silva and Ribeiro, Rodrigo Geraldo},
+  booktitle   = {Proceedings of the XXVIII Brazilian Symposium on Programming Languages (SBLP '24)},
+  year        = {2024},
+  publisher   = {ACM},
+  abstract    = {This paper describes a type system guided algorithm to generate random and well-typed Haskell programs, which can be used for testing the compiler, development tools, and libraries.},
+  code        = {https://github.com/sfeitosa/hsgenerator},
+  bibtex_show = {true},
+  abbr        = {SBLP}
+}
+
+@inproceedings{ribeiro2023pegtermination,
+  title       = {{Type-based Termination Analysis for Parsing Expression Grammars}},
+  author      = {Cardoso, Elton M. and Pereira, Daniel F. and de Paula, Regina S. M. A. and Reis, Leonardo V. S. and Ribeiro, Rodrigo G.},
+  booktitle   = {Proceedings of the 38th ACM/SIGAPP Symposium on Applied Computing (SAC '23)},
+  year        = {2023},
+  publisher   = {ACM},
+  doi         = {10.1145/3555776.3577620},
+  abstract    = {A PEG that succeeds or rejects every input string is said to be complete, and checking if an arbitrary PEG is complete is undecidable. We propose a sound type-based termination analysis for PEGs as a type inference algorithm.},
+  code        = {https://github.com/lives-group/typed-peg},
+  bibtex_show = {true},
+  abbr        = {SAC}
+}
+
+@inproceedings{ribeiro2023apeg,
+  title       = {{A Haskell Library for Adaptable Parsing Expression Grammars}},
+  author      = {Cardoso, Elton M. and Reis, Leonardo V. S. and Emiliano, Marcos Geraldo Braga and Ribeiro, Rodrigo G.},
+  booktitle   = {Proceedings of the XXVII Brazilian Symposium on Programming Languages (SBLP 2023)},
+  year        = {2023},
+  publisher   = {ACM},
+  doi         = {10.1145/3624309.3624313},
+  abstract    = {Adaptable Parsing Expression Grammar (APEG) is a formal model for describing languages which provide a mechanism to extend its own syntax during parsing. We review the syntax and semantics of APEG and discuss the implementation of a Haskell library for building parsers for extensible languages.},
+  code        = {https://github.com/lives-group/APEGLitleToy},
+  bibtex_show = {true},
+  abbr        = {SBLP}
+}
+
+@inproceedings{ribeiro2023regexsemantics,
+  title       = {{A Verified Operational Semantics for Regular Expression Parsing}},
+  author      = {Cardoso, Elton M. and Reis, Leonardo V. S. and Ribeiro, Rodrigo G.},
+  booktitle   = {Proceedings of the XXVII Brazilian Symposium on Programming Languages (SBLP 2023)},
+  year        = {2023},
+  publisher   = {ACM},
+  doi         = {10.1145/3624309.3624317},
+  abstract    = {Instead of using derivatives or generating a finite state machine for a given regular expression, we develop an operational semantics for parsing regular languages in which a RE is a program executed over the input string. We show that the semantics is sound w.r.t. a standard inductive semantics for REs. All results are formalized in Coq.},
+  code        = {https://github.com/lives-group/regex-transformation},
+  bibtex_show = {true},
+  abbr        = {SBLP}
+}
+
+@inproceedings{ribeiro2022ota,
+  title       = {{Open Transactional Actions: Interacting with Non-transactional Resources in STM Haskell}},
+  author      = {Conceição, Jonathas Augusto de Oliveira and Du Bois, André Rauber and Feitosa, Samuel da Silva and Cavalheiro, Gerson Geraldo Homrich and Ribeiro, Rodrigo Geraldo},
+  booktitle   = {Proceedings of the 15th ACM SIGPLAN International Haskell Symposium (Haskell '22)},
+  year        = {2022},
+  publisher   = {ACM},
+  doi         = {10.1145/3546189.3549924},
+  abstract    = {This paper addresses the problem of accessing external resources from inside transactions in STM Haskell, and introduces Open Transactional Actions (OTAs), a framework for wrapping non-transactional resources in a transactional layer, with commit and abort handlers.},
+  selected    = {true},
+  bibtex_show = {true},
+  abbr        = {Haskell}
+}
+
+@inproceedings{ribeiro2022modal,
+  title       = {{A Sound Deep Embedding of Arbitrary Normal Modal Logics in Coq}},
+  author      = {da Silveira, Ariel Agne and Nunes, Miguel and Roggia, Karina and Torrens, Paulo and Ribeiro, Rodrigo},
+  booktitle   = {Proceedings of the XXVI Brazilian Symposium on Programming Languages (SBLP 2022)},
+  year        = {2022},
+  publisher   = {ACM},
+  doi         = {10.1145/3561320.3561329},
+  abstract    = {This work describes an encoding of modal logics using the Coq proof assistant, providing a uniform representation of several systems for modal logic using Coq's rich type structure. We illustrate the library with a formalization of Löb's theorem.},
+  code        = {https://github.com/funcao/ModalLibrary},
+  bibtex_show = {true},
+  abbr        = {SBLP}
+}
+
+@inproceedings{ribeiro2022peggen,
+  title       = {{A Type-Directed Algorithm to Generate Random Well-Formed Parsing Expression Grammars}},
+  author      = {Cardoso, Elton M. and Pereira, Daniel Freitas and de Paula, Regina Sarah Monferrari Amorim and Reis, Leonardo V. S. and Ribeiro, Rodrigo},
+  booktitle   = {Proceedings of the XXVI Brazilian Symposium on Programming Languages (SBLP 2022)},
+  year        = {2022},
+  publisher   = {ACM},
+  doi         = {10.1145/3561320.3561326},
+  abstract    = {When experimenting with PEG-based tools using property-based testing, it is mandatory to randomly generate only well-formed PEGs, since a naive generation strategy may lead a parser into an infinite loop. We propose an algorithm for generating well-formed PEGs, prove its correctness and implement it as a Racket library.},
+  code        = {https://github.com/lives-group/pegwfgen},
+  bibtex_show = {true},
+  abbr        = {SBLP}
+}
+
+@inproceedings{ribeiro2022recursion,
+  title       = {{A Sound Strategy to Compile General Recursion into Finite Depth Pattern Matching}},
+  author      = {Amaro, Maycon J. J. and Feitosa, Samuel S. and Ribeiro, Rodrigo G.},
+  booktitle   = {Formal Methods: Foundations and Applications -- 25th Brazilian Symposium on Formal Methods (SBMF 2022)},
+  series      = {Lecture Notes in Computer Science},
+  year        = {2022},
+  publisher   = {Springer},
+  abstract    = {We propose a technique to unroll recursive programs in functional languages to create terminating versions of them, prove that the strategy terminates, and use property-based testing to build confidence that semantics is preserved. The strategy can be used to compile functional languages to restrictive targets such as eBPF and smart contracts.},
+  code        = {https://github.com/mayconamaro/ringell},
+  bibtex_show = {true},
+  abbr        = {SBMF}
+}
+
+@inproceedings{ribeiro2021javasynthesis,
+  title       = {{Synthesis of Random Real-World Java Programs from Preexisting Libraries}},
+  author      = {Kraus, Luiz Felipe and Schafaschek, Bruno and Ribeiro, Rodrigo Geraldo and da Silva Feitosa, Samuel},
+  booktitle   = {Proceedings of the 25th Brazilian Symposium on Programming Languages (SBLP '21)},
+  year        = {2021},
+  month       = {sep},
+  pages       = {108--115},
+  publisher   = {ACM},
+  doi         = {10.1145/3475061.3475087},
+  abstract    = {We describe a formal procedure to synthesize random programs from preexisting code, considering all the constraints imposed by the Java compiler, prove that the produced code is well-typed with respect to a simplified type system for Java, and present an implementation.},
+  code        = {https://github.com/fjpub/jrg},
+  bibtex_show = {true},
+  abbr        = {SBLP}
+}
+
+@article{ribeiro2021listmachinecola,
+  title       = {{An Intrinsically-Typed Solution for the List-Machine Benchmark}},
+  author      = {Feitosa, Samuel and Ribeiro, Rodrigo},
+  journal     = {Journal of Computer Languages},
+  year        = {2021},
+  publisher   = {Elsevier},
+  abstract    = {We use dependently-typed programming to build a verified interpreter for the list-machine benchmark in the Agda programming language, comparing the results with formalizations developed by Appel and Leroy, and extending the conference version with jump instructions.},
+  code        = {https://github.com/lives-group/list-machine},
+  selected    = {true},
+  bibtex_show = {true},
+  abbr        = {COLA}
+}
+
+@article{ribeiro2021derivativecleiej,
+  title       = {{The Design of a Verified Derivative-Based Parsing Tool for Regular Expressions}},
+  author      = {Cardoso, Elton M. and Amaro, Maycon J. and Feitosa, Samuel da Silva and Reis, Leonardo V. S. and Du Bois, André Rauber and Ribeiro, Rodrigo G.},
+  journal     = {CLEI Electronic Journal},
+  year        = {2021},
+  abstract    = {We describe the formalization of Brzozowski and Antimirov derivative based algorithms for regular expression parsing in the dependently typed language Agda. A tool for regular expression based search in the style of GNU grep has been developed with the certified algorithms.},
+  bibtex_show = {true},
+  abbr        = {CLEI}
+}
+
+@article{ribeiro2021etfjcleiej,
+  title       = {{Towards an Extrinsic Formalization of Featherweight Java in Agda}},
+  author      = {Feitosa, Samuel S. and Ribeiro, Rodrigo and Du Bois, André R.},
+  journal     = {CLEI Electronic Journal},
+  year        = {2021},
+  abstract    = {We formalize Featherweight Java, implementing its static and dynamic semantics in Agda and proving the main safety properties for this calculus.},
+  code        = {https://github.com/fjpub/etfj},
+  bibtex_show = {true},
+  abbr        = {CLEI}
+}
+
+@article{ribeiro2020toplas,
+  title       = {{Type Inference for C: Applications to the Static Analysis of Incomplete Programs}},
+  author      = {Melo, Leandro T. C. and Ribeiro, Rodrigo G. and Guimarães, Breno C. F. and Pereira, Fernando Magno Quintão},
+  journal     = {ACM Transactions on Programming Languages and Systems},
+  year        = {2020},
+  publisher   = {ACM},
+  abstract    = {Type inference remains an unexplored subject in the realm of C. Parsing C requires not only syntactic but also semantic information, and C has an intricate type system. We present a unification-based framework for type inference in C with applications to the static analysis of incomplete programs.},
+  selected    = {true},
+  bibtex_show = {true},
+  abbr        = {TOPLAS}
+}
+
+@article{ribeiro2020java8gen,
+  title       = {{A Type-Directed Algorithm to Generate Random Well-Typed Java 8 Programs}},
+  author      = {Feitosa, Samuel and Ribeiro, Rodrigo and Du Bois, Andre},
+  journal     = {Science of Computer Programming},
+  year        = {2020},
+  publisher   = {Elsevier},
+  abstract    = {We formalize a type-directed procedure to generate random well-typed Java 8 programs in the context of Featherweight Java, extended with interfaces, lambda-expressions and default methods, implement it in Haskell and verify it against relevant properties using QuickCheck.},
+  bibtex_show = {true},
+  abbr        = {SCP}
+}
+
+@inproceedings{ribeiro2020listmachine,
+  title       = {{An Intrinsically-Typed Solution for the List-Machine Benchmark}},
+  author      = {Feitosa, Samuel and Ribeiro, Rodrigo},
+  booktitle   = {Proceedings of the 24th Brazilian Symposium on Programming Languages (SBLP '20)},
+  year        = {2020},
+  publisher   = {ACM},
+  doi         = {10.1145/3427081.3427082},
+  award       = {3rd Best Paper Award at SBLP 2020},
+  abstract    = {We build a verified interpreter for the list-machine benchmark in Agda, encoding the model in a dependently-typed language to ensure its correctness by construction. We formalize the 14 tasks of the benchmark using roughly 14 percent of the LOC of a Twelf solution and 47 percent of a Coq solution, without proof automation.},
+  code        = {https://github.com/lives-group/list-machine},
+  bibtex_show = {true},
+  abbr        = {SBLP}
+}
+
+@inproceedings{ribeiro2020consistency,
+  title       = {{Syntax vs Semantics: Comparing Consistency Proofs for Minimal Propositional Logics}},
+  author      = {Sasdelli, Felipe and Amaro, Maycon and Cardoso, Elton and Feitosa, Samuel and Ribeiro, Rodrigo},
+  booktitle   = {Proceedings of the 24th Brazilian Symposium on Programming Languages (SBLP '20)},
+  year        = {2020},
+  publisher   = {ACM},
+  doi         = {10.1145/3427081.3427083},
+  abstract    = {We compare two formalizations of consistency for minimal propositional logic, a semantics-based one following the Curry-Howard correspondence and a traditional proof-theoretical one, both in Coq and in Agda, and discuss the lessons learned.},
+  bibtex_show = {true},
+  abbr        = {SBLP}
+}
+
+@inproceedings{ribeiro2020etfj,
+  title       = {{Towards an Extrinsic Formalization of Featherweight Java in Agda}},
+  author      = {Feitosa, Samuel S. and Ribeiro, Rodrigo G. and Du Bois, Andre R.},
+  booktitle   = {XLVI Latin American Computing Conference (CLEI 2020)},
+  year        = {2020},
+  publisher   = {IEEE},
+  abstract    = {We formalize Featherweight Java, implementing its static and dynamic semantics in Agda and proving the main safety properties for this calculus.},
+  code        = {https://github.com/fjpub/etfj},
+  bibtex_show = {true},
+  abbr        = {CLEI}
+}
+
+@inproceedings{ribeiro2020derivativeclei,
+  title       = {{The Design of a Verified Derivative-Based Parsing Tool for Regular Expressions}},
+  author      = {Cardoso, Elton M. and Amaro, Maycon J. and Feitosa, Samuel S. and Lopes, Raul P. and Reis, Leonardo V. S. and Du Bois, André R. and Ribeiro, Rodrigo G.},
+  booktitle   = {XLVI Latin American Computing Conference (CLEI 2020)},
+  year        = {2020},
+  publisher   = {IEEE},
+  abstract    = {We formalize Brzozowski and Antimirov derivative based algorithms for regular expression parsing in Agda. The formalization produces a proof that either an input string matches a given regular expression or that no matching exists, and a certified grep-like tool is evaluated experimentally.},
+  bibtex_show = {true},
+  abbr        = {CLEI}
+}
+
+@article{ribeiro2020unifyrita,
+  title       = {{A Mechanized Proof of a Textbook Type Unification Algorithm}},
+  author      = {Amaro, Maycon and Ribeiro, Rodrigo and Du Bois, André Rauber},
+  journal     = {Revista de Informática Teórica e Aplicada (RITA)},
+  year        = {2020},
+  bibtex_show = {true},
+  abbr        = {RITA}
+}
+
+@inproceedings{ribeiro2019apegattribute,
+  title       = {{An Attribute Language Definition for Adaptable Parsing Expression Grammars}},
+  author      = {Cardoso, Elton M. and Ribeiro, Rodrigo G. and Reis, Leonardo V. S. and Bigonha, Mariza A. S. and Bigonha, Roberto S. and Di Iorio, Vladimir O.},
+  booktitle   = {Proceedings of the 34th ACM/SIGAPP Symposium on Applied Computing (SAC '19)},
+  year        = {2019},
+  publisher   = {ACM},
+  doi         = {10.1145/3297280.3299738},
+  abstract    = {Adaptable Parsing Expression Grammars (APEG) are a formal model to describe the syntax of extensible languages and their extension mechanisms, extending PEGs with syntactic attributes. We define an attribute language for APEG.},
+  bibtex_show = {true},
+  abbr        = {SAC}
+}
+
+@inproceedings{ribeiro2019typedpeg,
+  title       = {{Towards Typed Semantics for Parsing Expression Grammars}},
+  author      = {Ribeiro, Rodrigo and Reis, Leonardo V. S. and Feitosa, Samuel and Cardoso, Elton M.},
+  booktitle   = {Proceedings of the XXIII Brazilian Symposium on Programming Languages (SBLP 2019)},
+  year        = {2019},
+  publisher   = {ACM},
+  doi         = {10.1145/3355378.3355388},
+  abstract    = {We describe the formalization of a type system for parsing expression grammars (PEG) which is equivalent to Ford's original fixpoint-based definition of well-formed PEGs, and use it to implement a functional big-step semantics for typed PEGs in Agda.},
+  code        = {https://github.com/rodrigogribeiro/typedpeg},
+  bibtex_show = {true},
+  abbr        = {SBLP}
+}
+
+@inproceedings{ribeiro2019inherentlyfj,
+  title       = {{An Inherently-Typed Formalization for Featherweight Java}},
+  author      = {Feitosa, Samuel da Silva and Serrano Mena, Alejandro and Ribeiro, Rodrigo Geraldo and Du Bois, Andre Rauber},
+  booktitle   = {Proceedings of the XXIII Brazilian Symposium on Programming Languages (SBLP 2019)},
+  year        = {2019},
+  publisher   = {ACM},
+  doi         = {10.1145/3355378.3355385},
+  abstract    = {We give an inherently-typed (intrinsically-typed) formalization of Featherweight Java in Agda, in which well-typedness and its safety properties are guaranteed by construction.},
+  bibtex_show = {true},
+  abbr        = {SBLP}
+}
+
+@inproceedings{ribeiro2019hmusic,
+  title       = {{HMusic: A domain specific language for music programming and live coding}},
+  author      = {Du Bois, André Rauber and Ribeiro, Rodrigo Geraldo},
+  booktitle   = {Proceedings of the International Conference on New Interfaces for Musical Expression (NIME '19)},
+  year        = {2019},
+  abstract    = {HMusic is a domain specific language based on music patterns, with patterns and tracks as its main abstractions, embedded in Haskell and compiled into Sonic Pi, that can be used to write music and live coding.},
+  code        = {https://github.com/hmusiclanguage/hmusic},
+  bibtex_show = {true},
+  abbr        = {NIME}
+}
+
+@inproceedings{ribeiro2019hmusiceffects,
+  title       = {{Combining Effects in a Music Programming Language based on Patterns}},
+  author      = {Du Bois, André Rauber and Ribeiro, Rodrigo Geraldo},
+  booktitle   = {Simpósio Brasileiro de Computação Musical (SBCM 2019)},
+  year        = {2019},
+  abstract    = {We extend the original design of HMusic, a pattern-based DSL for music and live coding embedded in Haskell, to allow effects on individual tracks and on groups of tracks, and describe how they interact with track composition and multiplication.},
+  code        = {https://github.com/hmusiclanguage/hmusic},
+  bibtex_show = {true},
+  abbr        = {SBCM}
+}
+
+@inproceedings{ribeiro2018boosting,
+  title       = {{Transactional Boosting no Glasgow Haskell Compiler}},
+  author      = {Conceição, Jonathas A. O. and Du Bois, André R. and Ribeiro, Rodrigo G.},
+  booktitle   = {XIX Simpósio Brasileiro de Computação de Alto Desempenho (WSCAD 2018)},
+  year        = {2018},
+  pdf         = {https://rodrigogribeiro.github.io/files/boost-stm.pdf},
+  abstract    = {Transactional Boosting transforms linearizable concurrent actions into transactional ones, avoiding false conflicts. We present an extension of STM Haskell, and the required changes to the GHC runtime system, to support transactional boosting.},
+  bibtex_show = {true},
+  abbr        = {WSCAD}
+}
+
+@inproceedings{ribeiro2018sbmffj,
+  title       = {{A Type-Directed Algorithm to Generate Well-Typed Featherweight Java Programs}},
+  author      = {Feitosa, Samuel S. and Ribeiro, Rodrigo Geraldo and Du Bois, Andre Rauber},
+  booktitle   = {Formal Methods: Foundations and Applications -- 21st Brazilian Symposium on Formal Methods (SBMF 2018)},
+  series      = {Lecture Notes in Computer Science},
+  volume      = {11254},
+  pages       = {39--55},
+  year        = {2018},
+  publisher   = {Springer},
+  doi         = {10.1007/978-3-030-03044-5_4},
+  pdf         = {https://rodrigogribeiro.github.io/files/typedirectedFJ.pdf},
+  abstract    = {We formalize a type-directed procedure to generate random well-typed programs in the context of Featherweight Java, use javac as an oracle, and check type-soundness properties of an FJ interpreter with QuickCheck.},
+  code        = {https://github.com/fjpub/fj-qc},
+  bibtex_show = {true},
+  abbr        = {SBMF}
+}
+
+@inproceedings{ribeiro2018fjlambda,
+  title       = {{Property-Based Testing for Lambda Expressions Semantics in Featherweight Java}},
+  author      = {Feitosa, Samuel da Silva and Ribeiro, Rodrigo Geraldo and Du Bois, Andre Rauber},
+  booktitle   = {Proceedings of the XXII Brazilian Symposium on Programming Languages (SBLP 2018)},
+  year        = {2018},
+  publisher   = {ACM},
+  pdf         = {https://rodrigogribeiro.github.io/files/FJsemantics.pdf},
+  abstract    = {We define rigorous semantics for lambda-expressions and default methods of Java 8 on top of Featherweight Java, sketch type soundness proofs, and use QuickCheck to test the proposed semantics.},
+  bibtex_show = {true},
+  abbr        = {SBLP}
+}
+
+@inproceedings{ribeiro2018regexvm,
+  title       = {{Towards certified virtual machine-based regular expression parsing}},
+  author      = {Delfino, Thales Antônio and Ribeiro, Rodrigo},
+  booktitle   = {Proceedings of the XXII Brazilian Symposium on Programming Languages (SBLP 2018)},
+  year        = {2018},
+  publisher   = {ACM},
+  doi         = {10.1145/3264637.3264646},
+  pdf         = {https://rodrigogribeiro.github.io/files/regexvm-paper.pdf},
+  abstract    = {Instead of converting regular expressions to finite state machines or using derivatives, we investigate a virtual machine-based approach in which a regular expression is a program executed over the input string, towards a certified RE parsing algorithm.},
+  bibtex_show = {true},
+  abbr        = {SBLP}
+}
+
+@inproceedings{ribeiro2018gadt,
+  title       = {{Type Inference for GADTs, OutsideIn and Anti-unification}},
+  author      = {Moreira, Gabriela and Vasconcellos, Cristiano and Ribeiro, Rodrigo},
+  booktitle   = {Proceedings of the XXII Brazilian Symposium on Programming Languages (SBLP 2018)},
+  year        = {2018},
+  publisher   = {ACM},
+  pdf         = {https://rodrigogribeiro.github.io/files/GADT18.pdf},
+  abstract    = {We present a type inference algorithm for GADTs that extends the OutsideIn algorithm using anti-unification to capture the relationship between the types of arguments and results of GADT functions.},
+  bibtex_show = {true},
+  abbr        = {SBLP}
+}
+
+@inproceedings{ribeiro2018cleifj,
+  title       = {{Generating Random Well-Typed Featherweight Java Programs Using QuickCheck}},
+  author      = {Feitosa, Samuel da Silva and Ribeiro, Rodrigo Geraldo and Du Bois, Andre Rauber},
+  booktitle   = {XLIV Latin American Computing Conference (CLEI 2018)},
+  year        = {2018},
+  publisher   = {IEEE},
+  pdf         = {https://rodrigogribeiro.github.io/files/CLEIFJ.pdf},
+  abstract    = {We present a QuickCheck-based generator of random well-typed Featherweight Java programs and an FJ interpreter in Haskell, and use them for property-based testing of the calculus' semantics.},
+  code        = {https://github.com/sfeitosa/fj-qc},
+  bibtex_show = {true},
+  abbr        = {CLEI}
+}
+
+@article{ribeiro2018ritafj,
+  title       = {{Formal Semantics for Java-like Languages and Research Opportunities}},
+  author      = {Feitosa, Samuel da Silva and Ribeiro, Rodrigo Geraldo and Du Bois, André Rauber},
+  journal     = {Revista de Informática Teórica e Aplicada (RITA)},
+  year        = {2018},
+  pdf         = {https://rodrigogribeiro.github.io/files/ritaFJ.pdf},
+  abstract    = {We survey the formalization of small subsets of Java-like languages and discuss research opportunities in this field.},
+  bibtex_show = {true},
+  abbr        = {RITA}
+}
+
+@article{ribeiro2018popl,
+  title       = {{Inference of Static Semantics for Incomplete C Programs}},
+  author      = {Melo, Leandro T. C. and Ribeiro, Rodrigo G. and de Araújo, Marcus R. and Pereira, Fernando Magno Quintão},
+  journal     = {Proceedings of the ACM on Programming Languages},
+  volume      = {2},
+  number      = {POPL},
+  year        = {2018},
+  publisher   = {ACM},
+  doi         = {10.1145/3158117},
+  pdf         = {https://rodrigogribeiro.github.io/files/inferenceC.pdf},
+  abstract    = {We present a unification-based type inference capable of dealing with C intricacies, which lets us reconstruct partial C programs into complete well-typed ones, enabling static analysis, stub generation and testing on incomplete code.},
+  bibtex_show = {true},
+  abbr        = {POPL},
+  selected    = {true}
+}
+
+@inproceedings{ribeiro2017bitregex,
+  title       = {{Certified Bit-Coded Regular Expression Parsing}},
+  author      = {Ribeiro, Rodrigo and Du Bois, André},
+  booktitle   = {Proceedings of the 21st Brazilian Symposium on Programming Languages (SBLP 2017)},
+  year        = {2017},
+  publisher   = {ACM},
+  doi         = {10.1145/3125374.3125381},
+  pdf         = {https://rodrigogribeiro.github.io/files/bitregex.pdf},
+  abstract    = {We describe the formalization in Agda of a regular expression parsing algorithm that produces a bit representation of its parse tree using Brzozowski derivatives, proving the codes equivalent to parse trees (soundness and completeness w.r.t. an inductive RE semantics).},
+  bibtex_show = {true},
+  abbr        = {SBLP}
+}
+
+@inproceedings{ribeiro2017hdrum,
+  title       = {{A Domain Specific Language for Drum Beat Programming}},
+  author      = {Du Bois, André Rauber and Ribeiro, Rodrigo},
+  booktitle   = {Brazilian Symposium on Computer Music (SBCM 2017)},
+  year        = {2017},
+  pdf         = {https://rodrigogribeiro.github.io/files/hdrum.pdf},
+  abstract    = {This paper describes HDrum, a DSL embedded in Haskell for writing drum patterns, whose programs look like the grids of sequencers and drum machines while supporting abstractions to manipulate patterns.},
+  bibtex_show = {true},
+  abbr        = {SBCM}
+}
+
+@article{ribeiro2016ambiguityscp,
+  title       = {{Ambiguity and Constrained Polymorphism}},
+  author      = {Camarão, Carlos and Figueiredo, Lucília and Ribeiro, Rodrigo},
+  journal     = {Science of Computer Programming},
+  year        = {2016},
+  publisher   = {Elsevier},
+  doi         = {10.1016/j.scico.2016.03.007},
+  abstract    = {This paper considers the problem of ambiguity in Haskell-like languages, discusses the disadvantages of the standard notion of ambiguity in the context of constrained polymorphism, and presents a new definition where existence of more than one instance for an expression type is considered only after overloading resolution.},
+  bibtex_show = {true},
+  abbr        = {SCP}
+}
+
+@inproceedings{ribeiro2016optional,
+  title       = {{Optional Type Classes for Haskell}},
+  author      = {Ribeiro, Rodrigo and Camarão, Carlos and Figueiredo, Lucília and Vasconcellos, Cristiano},
+  booktitle   = {Programming Languages -- 20th Brazilian Symposium (SBLP 2016)},
+  series      = {Lecture Notes in Computer Science},
+  volume      = {9889},
+  pages       = {125--139},
+  year        = {2016},
+  publisher   = {Springer},
+  pdf         = {https://rodrigogribeiro.github.io/files/optional.pdf},
+  abstract    = {We explore an approach for allowing type classes to be optionally declared by programmers: the type of an overloaded symbol, if not explicitly declared in a type class, is determined from the anti-unification of its instance types in the relevant module.},
+  bibtex_show = {true},
+  abbr        = {SBLP}
+}
+
+@inproceedings{ribeiro2016regex,
+  title       = {{Certified Derivative-Based Parsing of Regular Expressions}},
+  author      = {Lopes, Raul and Ribeiro, Rodrigo and Camarão, Carlos},
+  booktitle   = {Programming Languages -- 20th Brazilian Symposium (SBLP 2016)},
+  series      = {Lecture Notes in Computer Science},
+  volume      = {9889},
+  pages       = {95--109},
+  year        = {2016},
+  publisher   = {Springer},
+  pdf         = {https://rodrigogribeiro.github.io/files/regex.pdf},
+  abstract    = {We describe the formalization of a certified algorithm for regular expression parsing based on Brzozowski derivatives in Idris, producing a proof that an input string matches a given regular expression or that no matching exists, and a certified grep-like tool.},
+  code        = {https://github.com/rodrigogribeiro/regex},
+  bibtex_show = {true},
+  abbr        = {SBLP}
+}
+
+@inproceedings{ribeiro2016partialc,
+  title       = {{Compilação Parcial de Programas Escritos em C}},
+  author      = {Ribeiro, Rodrigo Geraldo and Melo, Leandro Terra Cunha and de Araújo, Marcus Rodrigues and Pereira, Fernando Magno Quintão},
+  booktitle   = {20th Brazilian Symposium on Programming Languages (SBLP 2016)},
+  year        = {2016},
+  pdf         = {https://rodrigogribeiro.github.io/files/partial-c.pdf},
+  abstract    = {There is no partial compiler for C programs whose source code is not fully available. This paper presents a technique to compile such partial C programs.},
+  bibtex_show = {true},
+  abbr        = {SBLP}
+}
+
+@inproceedings{ribeiro2015unify,
+  title       = {{A Mechanized Textbook Proof of a Type Unification Algorithm}},
+  author      = {Ribeiro, Rodrigo and Camarão, Carlos},
+  booktitle   = {Formal Methods: Foundations and Applications -- 18th Brazilian Symposium (SBMF 2015)},
+  series      = {Lecture Notes in Computer Science},
+  volume      = {9526},
+  pages       = {127--141},
+  year        = {2016},
+  publisher   = {Springer},
+  pdf         = {https://rodrigogribeiro.github.io/files/unify.pdf},
+  abstract    = {As a first step towards a formalization of a type inference algorithm for languages like Haskell, we present a formalization in Coq of a type unification algorithm that follows classic algorithms presented in programming language textbooks.},
+  bibtex_show = {true},
+  abbr        = {SBMF}
+}
+
+@inproceedings{ribeiro2015gadt,
+  title       = {{Type Inference for GADTs and Anti-unification}},
+  author      = {Gelain, Adelaine and Vasconcellos, Cristiano and Camarão, Carlos and Ribeiro, Rodrigo},
+  booktitle   = {Programming Languages -- 19th Brazilian Symposium (SBLP 2015)},
+  series      = {Lecture Notes in Computer Science},
+  volume      = {9325},
+  pages       = {16--30},
+  year        = {2015},
+  publisher   = {Springer},
+  pdf         = {https://rodrigogribeiro.github.io/files/gadt.pdf},
+  abstract    = {We present a type inference algorithm for GADTs that is based on a closed-world approach to overloading and uses anti-unification and constraint-set satisfiability to infer the relationship between the types of function arguments and result.},
+  bibtex_show = {true},
+  abbr        = {SBLP}
+}
+
+@article{ribeiro2013trust,
+  title       = {{Mechanized Metatheory for a λ-Calculus with Trust Types}},
+  author      = {Ribeiro, Rodrigo and Figueiredo, Lucília and Camarão, Carlos},
+  journal     = {Journal of the Brazilian Computer Society},
+  volume      = {19},
+  pages       = {433--443},
+  year        = {2013},
+  publisher   = {Springer},
+  doi         = {10.1007/s13173-013-0119-5},
+  abstract    = {We use the Coq proof assistant to formalise a lambda-calculus with trust types, originally formulated by Ørbæk and Palsberg, giving formal proofs of type soundness, erasure and simulation theorems and of decidability of the typing problem.},
+  bibtex_show = {true},
+  abbr        = {JBCS}
+}
+
+@article{ribeiro2013constraintsat,
+  title       = {{Terminating Constraint Set Satisfiability and Simplification Algorithms for Context-Dependent Overloading}},
+  author      = {Ribeiro, Rodrigo and Camarão, Carlos and Figueiredo, Lucília},
+  journal     = {Journal of the Brazilian Computer Society},
+  volume      = {19},
+  pages       = {423--432},
+  year        = {2013},
+  publisher   = {Springer},
+  doi         = {10.1007/s13173-013-0107-9},
+  abstract    = {Constraint set satisfiability and simplification of Haskell type class constraints are in general undecidable and may cause non-termination of type inference. This paper presents terminating algorithms for both problems.},
+  bibtex_show = {true},
+  abbr        = {JBCS}
+}
+
+@article{ribeiro2013ambiguity,
+  title       = {{Ambiguity and Context-dependent Overloading}},
+  author      = {Ribeiro, Rodrigo and Camarão, Carlos},
+  journal     = {Journal of the Brazilian Computer Society},
+  year        = {2013},
+  publisher   = {Springer},
+  doi         = {10.1007/s13173-013-0103-0},
+  abstract    = {This paper discusses ambiguity in languages that support context-dependent overloading, such as Haskell, where a Hindley-Milner style type system allows distinct derivations of the same type for ambiguous expressions.},
+  bibtex_show = {true},
+  abbr        = {JBCS}
+}
+
+@inproceedings{ribeiro2012satfeatures,
+  title       = {{Resolvedores SAT para Verificação de Consistência em Modelos de Características}},
+  author      = {Dias, Thieres Nardy and Figueiredo, Eduardo and Ribeiro, Rodrigo Geraldo},
+  booktitle   = {Simpósio Mineiro de Computação},
+  year        = {2012},
+  pdf         = {https://rodrigogribeiro.github.io/files/satverchar.pdf},
+  abstract    = {Feature models are a diagrammatic way of modelling software product lines; as they grow, checking their consistency becomes harder. This work uses SAT solvers to verify the consistency of feature models.},
+  bibtex_show = {true},
+  abbr        = {SMC}
+}
+
+@inproceedings{ribeiro2011sattabu,
+  title       = {{Uma Abordagem Híbrida de SAT e Busca Tabu para o Problema da Programação de Horários Escolares}},
+  author      = {da Fonseca, George Henrique Godim and Ribeiro, Rodrigo Geraldo and Martins, Flávio Vinícius Cruzeiro},
+  booktitle   = {XLIII Simpósio Brasileiro de Pesquisa Operacional (SBPO 2011)},
+  year        = {2011},
+  pdf         = {https://rodrigogribeiro.github.io/files/sattabutimetabling.pdf},
+  abstract    = {The school timetabling problem is NP-hard. We reduce it to propositional satisfiability (SAT) to build an initial solution with a SAT solver and then optimize it with Tabu Search.},
+  bibtex_show = {true},
+  abbr        = {SBPO}
+}
+
+@inproceedings{ribeiro2011sattimetabling,
+  title       = {{Programação de Horários Escolares Através de SAT e Metaheurísticas}},
+  author      = {Fonseca, George H. G. and Ribeiro, Rodrigo G. and Martins, Flávio V. Cruzeiro},
+  booktitle   = {10th Brazilian Congress on Computational Intelligence (CBIC 2011)},
+  year        = {2011},
+  pdf         = {https://rodrigogribeiro.github.io/files/sattimetabling.pdf},
+  abstract    = {We reduce the school timetabling problem to SAT, use a SAT solver to generate an initial solution, and then apply Tabu Search and Simulated Annealing to optimize it, comparing the results with related work.},
+  bibtex_show = {true},
+  abbr        = {CBIC}
+}
+
+@inproceedings{ribeiro2009mptc,
+  title       = {{A Solution to Haskell's Multi-Parameter Type Class Dilemma}},
+  author      = {Camarão, Carlos and Ribeiro, Rodrigo and Figueiredo, Lucília and Vasconcellos, Cristiano},
+  booktitle   = {XIII Simpósio Brasileiro de Linguagens de Programação (SBLP 2009)},
+  year        = {2009},
+  pdf         = {https://rodrigogribeiro.github.io/files/multiparam.pdf},
+  abstract    = {The introduction of multi-parameter type classes in Haskell has been hindered by problems associated with ambiguity. This paper proposes a minimalist solution that requires only a small change to the type inference algorithm and to what has been considered ambiguity in Haskell.},
+  bibtex_show = {true},
+  abbr        = {SBLP}
+}
+
+@inproceedings{ribeiro2007scql,
+  title       = {{Compreensão de Programas Apoiada por uma Linguagem de Consulta em Código Fonte}},
+  author      = {Pinheiro, Denis P. and Ribeiro, Rodrigo G. and Oliveira, Ademir A. and Maia, Marcelo A. and Bigonha, Roberto S.},
+  booktitle   = {IV Workshop de Manutenção Moderna de Software (WMSWM)},
+  year        = {2007},
+  pdf         = {https://rodrigogribeiro.github.io/files/metajscql.pdf},
+  abstract    = {This paper presents a query language for source code, based on relational concepts and working on a syntactic representation of programs, to support program comprehension during software maintenance.},
+  bibtex_show = {true},
+  abbr        = {WMSWM}
+}
+
+@inproceedings{ribeiro2005metaj,
+  title       = {{Iteradores, Templates e Consultas na Análise e Manipulação de Programas}},
+  author      = {Oliveira, Ademir A. and Ribeiro, Rodrigo G. and Pinheiro, Denis P. and Braga, Thiago H. and Maia, Marcelo A. and Bigonha, Roberto S.},
+  booktitle   = {II Workshop de Manutenção Moderna de Software (WMSWM 2005)},
+  year        = {2005},
+  pdf         = {https://rodrigogribeiro.github.io/files/metaj.pdf},
+  abstract    = {This work proposes the integrated use of iterators, templates and relational queries, based on typed source-code references and tree pattern matching, to ease the construction of program analysis and manipulation modules.},
+  bibtex_show = {true},
+  abbr        = {WMSWM}
+}
